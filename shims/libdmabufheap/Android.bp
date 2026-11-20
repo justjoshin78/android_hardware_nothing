@@ -1,0 +1,13 @@
+//
+// SPDX-FileCopyrightText: 2026 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_shared {
+    name: "libdmabufheap_shim",
+    srcs: ["BufferAllocator.cpp"],
+    header_libs: ["libbase_headers"],
+    shared_libs: ["libdmabufheap"],
+    compile_multilib: "64",
+    system_ext_specific: true,
+}
