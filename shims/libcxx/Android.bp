@@ -1,0 +1,11 @@
+//
+// SPDX-FileCopyrightText: 2026 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_shared {
+    name: "libcxx_shim",
+    srcs: ["hash_memory.cpp"],
+    compile_multilib: "64",
+    system_ext_specific: true,
+}
